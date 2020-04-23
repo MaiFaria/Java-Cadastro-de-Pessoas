@@ -22,9 +22,9 @@ public class PessoaService {
 		return pessoas;
 	}
 	
-	public static String buscaPessoaPeloCpf(String cpf) {
+	public static String buscaPessoaPeloCpf(String cpfConsultar) {
 		for (Pessoa pessoa : pessoas) {
-			if (isPessoaEquals(pessoa, cpf)) {
+			if (isPessoaEquals(pessoa, cpfConsultar)) {
 				return pessoa.toString();
 			}
 		}
@@ -32,9 +32,9 @@ public class PessoaService {
 		return null; 
 	}
 	
-	public static String excluiPessoaPeloCpf(String cpf) {
+	public static String excluiPessoaPeloCpf(String cpfExcluir) {
 		for (Pessoa pessoa : pessoas) {
-			if (isPessoaEquals(pessoa, cpf)) {
+			if (isPessoaEquals(pessoa, cpfExcluir)) {
 				pessoas.remove(pessoa);
 				return "Pessoa removida com SUCESSO!!";
 			}
