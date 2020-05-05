@@ -1,6 +1,5 @@
 package br.com.maiara.model;
 
-
 public class Contato {
 
 	private int contato1;

@@ -27,18 +27,18 @@ public class MenuPrincipal {
 				NovoCadastro.init();
 				break;
 			case 2:
-				System.out.println("Informe o CPF para EDITAR o cadastro");
+				System.out.println("\nInforme o CPF para EDITAR o cadastro");
 				String cpfEditar = entrada.nextLine();
 				EditarPessoa.init(cpfEditar);
 				break;
 			case 3:
-				System.out.println("Informe o CPF para EXCLUIR o cadastro");
+				System.out.println("\nInforme o CPF para EXCLUIR o cadastro");
 				String cpfExcluir = sc.nextLine();
 				entrada.nextLine();
 				System.out.println(PessoaService.excluiPessoaPeloCpf(cpfExcluir));
 				break;
 			case 4:
-				System.out.println("Informe o CPF para CONSULTAR o cadastro");
+				System.out.println("\nInforme o CPF para CONSULTAR o cadastro");
 				String cpfConsultar = sc.nextLine();
 				System.out.println(PessoaService.buscaPessoaPeloCpf(cpfConsultar));
 				break;

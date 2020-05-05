@@ -47,5 +47,5 @@ public class Pessoa {
 	public String toString() {
 		return "Pessoa [nome=" + nome + ", cpf=" + cpf + ", endereco=" + endereco + ", contato=" + contato + "]";
 	}
-	
+
 }
